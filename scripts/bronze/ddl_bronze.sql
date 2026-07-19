@@ -18,17 +18,17 @@ IF OBJECT_ID('bronze.closed_trades', 'U') IS NOT NULL
 GO
 
 CREATE TABLE bronze.closed_trades (
-    Symbol VARCHAR(50),
-    Type VARCHAR(50),
-    Open_Date VARCHAR(50),
-    OpenPrice DECIMAL(18,5),
-    Close_Date VARCHAR(50),
-    ClosePrice DECIMAL(18,5),
-    TakeProfit DECIMAL(18,5),
-    StopLoss DECIMAL(18,5),
-    Volume DECIMAL(18,4),
-    Commission VARCHAR(50),
-    Profit VARCHAR(50)
+    Symbol VARCHAR(100) NULL,
+    Type VARCHAR(100) NULL,
+    Open_Date VARCHAR(100) NULL,
+    OpenPrice VARCHAR(100) NULL,
+    Closed_Date VARCHAR(100) NULL,
+    ClosedPrice VARCHAR(100) NULL,
+    TP VARCHAR(100) NULL,
+    SL VARCHAR(100) NULL,
+    Lots VARCHAR(100) NULL,
+    Commission VARCHAR(100) NULL,
+    Profit VARCHAR(100) NULL
 
 );
 GO 
