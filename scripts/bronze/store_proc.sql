@@ -29,7 +29,7 @@ BEGIN
         PRINT '>> Truncating and Ingesting: bronze.closed_trades';
         TRUNCATE TABLE bronze.closed_trades;
         BULK INSERT bronze.closed_trades
-        FROM 'C:\DATASETS\MatchTrader\closed_trades.csv'
+        FROM 'C:\DATASETS\MatchTrader\YFX.csv'
         WITH (
             FIRSTROW = 2,
             FIELDTERMINATOR = ',',
